@@ -1,0 +1,66 @@
+@import './utils/fonts'; 
+@import './utils/variables';
+@import './base';
+@import './utils/utils';
+
+@import './components/buttons';
+@import './components/links';
+@import './components/header';
+@import './components/hero-section';
+@import './utils/texts';
+@import './utils/mixins';
+// .circle {
+//     @include circle(100px, 100px, white)
+// }
+// .circle-big {
+//     @include circle(200px, 150px, green)
+// }
+
+@import './layout/advantages-section';
+@import './layout/traditions-section';
+
+@import './layout/section';
+
+
+@import './components/chef-card';
+@import './layout/_chefs-section';
+
+
+@import './layout/formats-section';
+@import './components/format-card.scss';
+@import './components/carousel-button';
+
+@import './layout/contact-section';
+
+@import './layout/_footer';
+
+/* Modal */
+@import './layout/modal';
+/* Form  */
+
+
+@import './layout/form-terms';
+
+/* .checkbox {
+    position: relative;
+}
+.checkbox-input {
+    appearance: none;
+}
+.checkbox-input:checked + .checkbox-label::before {
+    background-color: green;
+}
+.checkbox-label {
+    padding-left: 24px;
+}
+.checkbox-label::before {
+    position: absolute;
+    left: 0;
+    top: 0;
+    margin-top: 5px;
+    width: 16px;
+    height: 16px;
+    border-radius: 2px;
+    content: '';
+    border: 1px solid var(--color-primary-dark);
+} */

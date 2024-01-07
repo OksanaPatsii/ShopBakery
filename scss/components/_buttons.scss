@@ -1,0 +1,29 @@
+.button {
+    padding:16px 32px;
+    color: var(--color-primary-light);
+    background-color: var(--color-brand);
+    border: 2px solid var(--color-brand);
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 600;
+    /* background-image: url(../images/logo.svg); */
+}
+.button:hover {
+    background-color: transparent;
+    color: var(--color-brand-dark);
+    
+}
+/* .button:disabled {
+    color: gray;
+    background-color: lightgrey;
+    border-color: currentColor;
+    cursor: not-allowed;
+} */
+/* .button:focus {
+    background-color: hotpink;
+    color: #465929;
+} */
+/* .button:active {
+    background-color: rgb(204, 66, 231);
+    color: #465929;
+} */

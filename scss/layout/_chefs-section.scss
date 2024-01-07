@@ -1,0 +1,33 @@
+.chefs-section {
+    margin-bottom: 80px;
+}
+.chefss-title {
+    position: relative;
+   margin: 0 auto 80px;
+}
+.chefss-title::after, 
+.chefss-title::before {
+    position: absolute;
+    display: block;
+    /* content: '*'; */
+    width: 325px;
+    /* border: 2px solid ; */
+    border: 2px solid var(--color-brand-light);
+    content: '';
+    bottom: 24px;
+}
+.chefss-title::before {
+    left: 0;
+}
+.chefss-title::after {
+    right: 0;
+}
+.chefs-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px 30px;
+}
+.chefs-item {
+    flex-basis: calc((100% - 30px) / 2);
+}
+

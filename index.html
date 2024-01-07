@@ -5,121 +5,321 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Moderne Bäckerei</title>
-    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&family=Nunito+Sans:opsz,wght@6..12,500&family=Nunito:ital,wght@0,400;0,600;0,800;1,400;1,600;1,800&family=Poppins:wght@300;400;600;900&family=Roboto&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./css/main.min.css">
 </head>
 
 <body>
-    <header>
-        <nav>
-            <a href="/">
-                <img src="./images/logo.svg" alt="Logo Moderne Bäckerei">
-            </a>
-            <ul>
-                <li><a class="link" href="#traditions-section">Format traditionen</a></li>
-                <li><a class="link" href="#chefs-section">Köche</a></li>
-                <li><a class="link" href="#format-section">Formate</a></li>
-                <li><a class="link" href="#contact-section">Kontakte</a></li>
-            </ul>
-        </nav>
-        <button class="button" type="button">Einen Anruf bestellen</button>
+    <header class="header">
+        <div class="container">
+            <div class="header__container">
+                <nav class="header__nav">
+                    <a href="/">
+                        <img src="./images/logo.svg" alt="Logo Moderne Bäckerei">
+                    </a>
+                    <ul class="header__menu">
+                        <li><a class="link" href="#traditions-section">Format traditionen</a></li>
+                        <li><a class="link" href="#chefs-section">Köche</a></li>
+                        <li><a class="link" href="#format-section">Formate</a></li>
+                        <li><a class="link" href="#contact-section">Kontakte</a></li>
+                    </ul>
+                </nav>
+                <button class="button modal-btn-open" type="button">Einen Anruf bestellen</button>
+
+            </div>
+        </div>
     </header>
     <main>
-        <section class="main-section">
-            <h1 class="hero-title"><span class="accent">Moderne</span> Bäckerei</h1>
+        <section class="hero-section">
+            <div class="container">
+                <h1 class="hero-section__title"><span class="text-brand">Moderne</span> Bäckerei</h1>
+            </div>
         </section>
-        <section id="traditions-section">
-            <ul class="advantages-list">
-                <li>Große Nachfrage auf dem Markt</li>
-                <li>Budgetfreundliche Formate</li>
-                <li>Erfahrenes Manegementteam</li>
-            </ul>
-            <h2 class="seection-title">Ein neues Format traditionen</h2>
-            <p> <span>Shop bakery</span> - dies ist eine Bäckerei, die das Beste genommen und deen Geschmack des
-                traditionellen Backens und ie Natürlichkeit der Zutaten bewahrt hat</p>
-            <p>Wir arbeiten wie die bekanntesten Netzwerke in - <span>5 minuten und die Bestellung ist fertig</span>.
-                Und auch unsere Bäckereien bieten stilvollen und hochwertigen Service.</p>
-            <img src="./images/baker-man.jpg" alt="baker-man">
-        </section>
-        <section id="chefs-section">
-            <h2 class="seection-title">Unsere besten <span class="accent">Köche</span></h2>
-            <ul>
-                <li>
-                    <article>
-                        <h3>Nastja</h3>
-                        <p>Hallo, ich bin Nastja! </p>
-                        <p>Ich erwecke seit 10 Jahren interessante und köstliche Ideen zum Leben.</p>
-                        <p>Ich backe die leckersten Producte für Sie!</p>
-                    </article>
-                </li>
-                <li>
-                    <article>
-                        <h3>Vlad</h3>
-                        <p>Hallo, ich bin Vlad! </p>
-                        <p>Ich habe seit 18 Jahren Erfahrung als Konditor und Bäcker sind unsere Liebe, die wir jedes
-                            Mal durch
-                            unser Gebäck mit Ihnen teilen. </p>
-                        <p>Ich erstelle für Sie eine einzigartige Füllung für jeden Geschmack
-                    </article>
-                </li>
-            </ul>
+        <div class="text-box">
 
-            </p>
+        </div>
+        <section class="advanteges-section">
+            <div class="container">
+                <h2 class="visually-hidden">Unsere vorteile</h2>
+                <ul class="advantages-list">
+                    <li class="advantages-item">Große Nachfrage auf dem Markt</li>
+                    <li class="advantages-item">Budgetfreundliche Formate</li>
+                    <li class="advantages-item">Erfahrenes Manegementteam</li>
+                </ul>
+
+            </div>
         </section>
-        <section id="format-section">
-            <h2 class="seection-title">Formate</h2>
-            <ul>
-                <li>
-                    <article>
-                        <h3 lang="en">Walrus</h3>
-                    </article>
-                </li>
-                <li>
-                    <article>
-                        <h3 lang="en">Horseshoe</h3>
-                    </article>
-                </li>
-                <li>
-                    <article>
-                        <h3 lang="en">Handlebar</h3>
-                        </article< /li>
-            </ul>
+        <section class="traditions-section section" id="traditions-section">
+            <div class="container">
+                <div class="traditions-container">
+                    <div class="traditions-content">
+                        <h2 class="traditions-title  section-title">Ein neues Format traditionen</h2>
+                        <p class="traditions-text">
+                            <span class="text-brand text-bold text-uppercase ">Shop bakery</span>
+                            - dies ist eine
+                            Bäckerei,
+                            die
+                            das Beste genommen und deen Geschmack des
+                            traditionellen Backens und ie Natürlichkeit der Zutaten bewahrt hat
+                        </p>
+                        <p class="traditions-text limited">Wir arbeiten wie die bekanntesten Netzwerke in - <span
+                                class="text-brand text-bold">
+                                5 minuten
+                                und die Bestellung ist fertig</span>.
+                            Und auch unsere Bäckereien bieten stilvollen und hochwertigen Service.</p>
+
+                    </div>
+                    <img src="./images/baker-man.jpg" alt="baker-man">
+
+                </div>
+            </div>
+        </section>
+        <section class="section " id="chefs-section">
+            <div class="container">
+                <h2 class="chefss-title section-title centered">Unsere besten <br>
+                    <span class="accent">Köche</span>
+                </h2>
+                <ul class="chefs-list">
+                    <li class="chefs-item">
+                        <article class="chef-card">
+                            <img class="chef-photo" src="./images/nastya-chef.jpg" alt="Nastya chef">
+                            <div class="">
+                                <h3 class="chef-title">Nastja</h3>
+                                <div class="chef-text">
+                                    <p>Hallo, ich bin Nastja! </p>
+                                    <p>Ich erwecke seit 10 Jahren <br> interessante und köstliche
+                                        Ideen
+                                        zum Leben.</p>
+                                    <p>Ich backe die leckersten Producte für Sie!</p>
+
+                                </div>
+
+                            </div>
+                        </article>
+                    </li>
+                    <li class="chefs-item">
+                        <article class="chef-card">
+                            <img class="chef-photo" src="./images/vlad-chef.jpg" alt="Vlad chef">
+                            <div class="">
+                                <h3 class="chef-title">Vlad</h3>
+                                <p class="chef-text">Hallo, ich bin Vlad! </p>
+                                <p class="chef-text">Ich habe seit 18 Jahren Erfahrung als Konditor und Bäcker sind
+                                    unsere Liebe, die wir
+                                    jedes
+                                    Mal durch
+                                    unser Gebäck mit Ihnen teilen. </p>
+                                <p class="chef-text">Ich erstelle für Sie eine einzigartige Füllung für jeden Geschmack
+
+                            </div>
+                        </article>
+                    </li>
+                </ul>
+
+                </p>
+
+            </div>
+        </section>
+        <section class="formats-section" id="formats-section">
+            <div class="container">
+                <h2 class="formats-title section-title centered">Formate</h2>
+                <div class="formats-container">
+                    <button class="carousel-button" type="button">
+                        <svg class="carousel-arrow" width="16" height="16">
+                            <use href="./images/icons.svg#icon-arrow"></use>
+                        </svg>
+                    </button>
+                    <ul class="formats-list">
+                        <li class="formats-item">
+                            <article class="format-card">
+                                <img class="format-image" src="./images/walrus-format.jpg" alt="walrus format" />
+                                <h3 class="format-title" lang="en">Walrus</h3>
+                                <div class="format-text">
+                                    <p>area: up to 120 m²</p>
+                                    <p>Menu located header-menu. </p>
+                                    <p>Staff 2 cashiers, two bakers, two assistant bakers, two waiters, all-rounders</p>
+                                    <p>seats available</p>
+                                </div>
+
+                            </article>
+                        </li>
+                        <li class="formats-item">
+                            <article class="format-card">
+                                <img class="format-image" src="./images/horseshoe-format.jpg" alt="walrus format" />
+                                <h3 class="format-title" lang="en">Horseshoe</h3>
+                                <div class="format-text">
+                                    <p>area: up to 120 m²</p>
+                                    <p>Menu located header-menu. </p>
+                                    <p>Staff 2 cashiers, two bakers, two assistant bakers, two waiters, all-rounders</p>
+                                    <p>seats available</p>
+                                </div>
+                            </article>
+                        </li>
+                        <li class="formats-item">
+                            <article class="format-card">
+                                <img class="format-image" src="./images/handlebar-format.jpg" alt="walrus format" />
+                                <h3 class="format-title" lang="en">Handlebar</h3>
+                                <div class="format-text">
+                                    <p>area: up to 120 m²</p>
+                                    <p>Menu located header-menu. </p>
+                                    <p>Staff 2 cashiers, two bakers, two assistant bakers, two waiters, all-rounders</p>
+                                    <p>seats available</p>
+                                </div>
+                                </article< /li>
+                    </ul>
+                    <button class="carousel-button next" type="button">
+                        <svg width="16" height="16">
+                            <use href="./images/icons.svg#icon-arrow"></use>
+                        </svg>
+                    </button>
+
+                </div>
+
+            </div>
+
+        </section>
+        <section class="contact-section section" id="contact-section">
+            <div class="container">
+                <div class="contact-container">
+                    <div class="contact-form">
+                        <h2 class="contact-title seection-title">Treten Sie dem Netzwerk der Bäckereien bei</h2>
+                        <p>Füllen Sie das Formular aus, damit wir Sie kontaktieren können</p>
+                        <form name="contact-form" autocomplete="on" novalidate>
+                            <div class="form-field"><!-- <input type="datetime-local"> -->
+                                <label class="form-label visually-hidden" for="user-name">Name</label>
+                                <input class="form-input" type="text" id="user-name" name="user-name"
+                                    placeholder="Name" />
+                            </div>
+                            <!-- <label>
+                            Ihren Namen eingeben
+                            <input type="text">
+                        </label> -->
+                            <div class="form-field"><label class="form-label visually-hidden"
+                                    for="user-tel">Telefonnummer</label>
+                                <input class="form-input" type="tel" id="user-tel" name="user-tel"
+                                    placeholder="Telefonnummer" />
+                            </div>
+
+                            <div class="form-field">
+                                <label class="form-label visually-hidden" for="user-email">Email</label>
+                                <input class="form-input" type="email" id="user-email" name="user-email"
+                                    placeholder="Email" />
+                            </div>
+
+                            <button class="button form-button" type="submit">Einen Anruf bestellen</button>
+                            <p class="form-terms">Durch Klicken auf den Button stimme ich den <a class="form-terms-link"
+                                    href="#">Datenschutzbestimmungen</a> zu</p>
+                        </form>
+
+                    </div>
+                    <!-- form -->
+                    <iframe class="contact-map"
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d310844.0805017142!2d13.42473175!3d52.5068441!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47a84e373f035901%3A0x42120465b5e3b70!2z0JHQtdGA0LvQuNC9!5e0!3m2!1sru!2sde!4v1699370826272!5m2!1sru!2sde"
+                        width="603" height="595" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
 
 
-        
-        </section>
-        <section id="contact-section">
-            <h2 class="seection-title">Treten Sie dem Netzwerk der Bäckereien bei</h2>
-            <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d310844.0805017142!2d13.42473175!3d52.5068441!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47a84e373f035901%3A0x42120465b5e3b70!2z0JHQtdGA0LvQuNC9!5e0!3m2!1sru!2sde!4v1699370826272!5m2!1sru!2sde"
-                width="603" height="595" allowfullscreen="" loading="lazy"
-                referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
         </section>
     </main>
-    <footer>
+    <footer class="footer">
 
-        <nav>
-            <a href="#">
-                <img src="./images/logo.svg" alt="Logo Moderne Bäckerei">
-            </a>
-            <ul>
-                <li><a href="#">Franchise</a></li>
-                <li><a href="#">Unsere Traditionen</a></li>
-                <li><a href="#">Formate</a></li>
-                <li><a href="#">Kontakte</a></li>
-            </ul>
-        </nav>
-        <address>
-            <ul>
-                <li><a href="tel:+749012698745">+49 012 698 745</a></li>
-                <li><a href="mailto:shopbaker@gmail.com">shopbaker@gmail.com</a></li>
-                <li><a href="https://maps.app.goo.gl/1KLqYmC4Ly5jFrwV8" target="_blank">Deutschland, Berlin</a></li>
-                <li><a href="#"></a></li>
-                <li><a href="#"></a></li>
-            </ul>
-            <a href="#" target="_blank">Datenschutzrichtlinie</a>
-            <p>&copy; 2023 Daten sind geschützt</p>
-        </address>
+        <div class="container">
+            <div class="footer-container">
+                <nav class="footer-nav">
+                    <div class="footer-logo">
+                        <a href="#">
+                            <img src="./images/logo.svg" alt="Logo Moderne Bäckerei">
+                        </a>
+                    </div>
+
+                    <ul class="footer-menu">
+                        <li><a class="link" href="#">Franchise</a></li>
+                        <li><a class="link" href="#">Unsere Traditionen</a></li>
+                        <li><a class="link" href="#">Formate</a></li>
+                        <li><a class="link" href="#">Kontakte</a></li>
+                    </ul>
+                </nav>
+                <address class="footer-address">
+                    <ul class="adress-list">
+                        <li>
+                            <a class="address-link" href="tel:+749012698745">+49 012 698 745</a>
+                        </li>
+                        <li>
+                            <a class="address-link" href="mailto:shopbaker@gmail.com">shopbaker@gmail.com</a>
+                        </li>
+                        <li>
+                            <a class="address-link" href="https://maps.app.goo.gl/1KLqYmC4Ly5jFrwV8"
+                                target="_blank">Deutschland,
+                                Berlin</a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <svg class="address-icon" width="32" height="32">
+                                    <use href="./images/icons.svg#icon-facebook"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#"><svg class="address-icon" width="32" height="32">
+                                    <use href="./images/icons.svg#icon-instagram"></use>
+                                </svg></a>
+                        </li>
+                    </ul>
+                    <div class="address-info">
+                        <a class="address-link" href="#" target="_blank">Datenschutzrichtlinie</a>
+                        <p class="address-copyright">&copy; 2023 Daten sind geschützt</p>
+
+                    </div>
+                </address>
+
+            </div>
+        </div>
     </footer>
+    <div class="backdrop">
+        <!-- <div class="backdrop is-hidden"> -->
+        <div class="modal">
+            <button class="modal-btn-close" type="button">Schließen</button>
+            <h2>Einen Anruf bestellen</h2>
+            <p>Schreiben Sie eine Bewerbung und unser Spezialist wird sich mit Ihnen in Verbindung setzen</p>
+            <form name="modal-form" autocomplete="off">
+                <div class="form-field"><!-- <input type="datetime-local"> -->
+                    <label class="form-label visually-hidden" for="user-name">Name</label>
+                    <input class="form-input" type="text" id="user-name" name="user-name" placeholder="Name"
+                        minlength="2" maxlength="20" required />
+                </div>
+                <!-- <label>
+                Ihren Namen eingeben
+                <input type="text">
+            </label> -->
+                <div class="form-field"><label class="form-label visually-hidden" for="user-tel">Telefonnummer</label>
+                    <input class="form-input" type="tel" id="user-tel" name="user-tel" placeholder="Telefonnummer"
+                        pattern="^\+[0-9]{12}" required />
+                </div>
+
+                <div class="form-field">
+                    <label class="form-label visually-hidden" for="user-email">Email</label>
+                    <input class="form-input" type="email" id="user-email" name="user-email" placeholder="Email"
+                        required />
+                </div>
+
+                <!-- <div class="checkbox">
+                    <input class="checkbox-input visually-hidden" type="checkbox" id="terms-conditions" name="terms-conditions">
+                <label class="checkbox-label" for="terms-conditions">Я погоджуюсь з політикою конфіденційності</label>
+                </div> -->
+
+                <button class="button form-button" type="submit">Einen Anruf bestellen</button>
+                <p class="form-terms">Durch Klicken auf den Button stimme ich den <a class="form-terms-link"
+                        href="#">Datenschutzbestimmungen</a> zu</p>
+            </form>
+        </div>
+    </div>
+
+    <script src="./js/modal.js"></script>
 </body>
 
 </html>
